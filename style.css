@@ -1,0 +1,1522 @@
+/* =================================
+   RESET
+================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+  
+    font-family: "Quicksand", sans-serif;
+}
+
+
+
+/* =================================
+   HIDDEN
+================================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =================================
+   LOGIN PAGE
+================================= */
+
+#login-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f6dcc2;
+
+    padding: 20px;
+}
+
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.login-card {
+    width: 400px;
+    max-width: 100%;
+
+    padding: 45px 35px;
+
+    background: #fff8f0;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 30, 0.15);
+}
+
+
+/* CAT */
+
+.login-cat {
+    font-size: 65px;
+
+    margin-bottom: 18px;
+}
+
+
+/* TEXT */
+
+.small-text {
+    font-size: 14px;
+
+    color: #9a6d52;
+
+    margin-bottom: 10px;
+}
+
+.login-card h1 {
+    font-size: 29px;
+
+    color: #4a3428;
+
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 15px;
+
+    color: #806657;
+
+    margin-bottom: 28px;
+}
+
+
+/* =================================
+   FORM
+================================= */
+form {
+    text-align: left;
+}
+label {
+    display: block;
+    font-size: 14px;
+    color: #5f4739;
+    margin-bottom: 8px;
+}
+/* */
+.date-box {
+    position: relative;
+    width: 100%;
+}
+#dob {
+    width: 100%;
+    height: 46px;
+    padding: 0 48px 0 14px;
+    border: 1px solid #dec5ae;
+    border-radius: 10px;
+    background: #fffdf9;
+    color: #4a3428;
+    font-size: 16px;
+}
+#dob:focus {
+    outline: none;
+    border-color: #9b6a50;
+}
+/*  */
+#calendar-button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+#calendar-button:hover {
+    background: #f2e2d3;
+}
+/* */
+#dob-picker {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    cursor: pointer;
+}
+/* */
+.submit-button {
+    width: 100%;
+    height: 46px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #95664e;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.submit-button:hover {
+    background: #79503d;
+}
+/* */
+#error-message {
+    min-height: 20px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #a64b3c;
+}
+/* */
+
+#birthday-page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f6dcc2;
+}
+/* */
+/* */
+#birthday-page {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #f6dcc2;
+    z-index: 100;
+}
+#birthday-page.hidden {
+ display:none !important;
+}
+/* */
+.birthday-content {
+    position: relative;
+    z-index: 20;
+    width: auto;
+    text-align: center;
+    color: #4a3428;
+}
+/* */
+.birthday-small {
+    display: block;
+font-family: "Lora", serif;
+
+    margin: 0 0 14px 0;
+
+    font-size: 16px;
+
+    color: #9a6d52;
+}
+
+
+/* */
+
+.birthday-title {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* HAPPY BIRTHDAY */
+
+.birthday-title h1 {
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+ font-family: "Quicksand", sans-serif;
+    font-size: clamp(42px, 5.5vw, 78px);
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #51372b;
+}
+
+
+/* BALLOON */
+
+.balloon-emoji {
+    display: block;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    line-height: 1;
+
+    transform: rotate(8deg);
+}
+
+
+/* =================================
+   NAME
+================================= */
+
+.birthday-content h2 {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 20px 0 0 0 !important;
+
+    padding: 0 !important;
+
+    text-align: center !important;
+     font-family: "Quicksand", sans-serif;
+    font-size: clamp(28px, 3.5vw, 42px);
+
+    line-height: 1.2;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #79543f;
+}
+
+
+/* =================================
+   CAT PHOTOS
+================================= */
+
+.cat-photo {
+    position: absolute !important;
+
+    z-index: 10;
+
+    object-fit: cover;
+
+    border: 6px solid #fff8f0;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 20px rgba(80, 50, 30, 0.16);
+}
+
+
+/* =================================
+   CAT 1 — TOP LEFT
+================================= */
+
+.cat-1 {
+    width: 180px !important;
+    height: 230px !important;
+
+    left: 7% !important;
+    top: 15% !important;
+
+    transform: rotate(-6deg);
+}
+
+
+/* =================================
+   CAT 2 — TOP RIGHT
+================================= */
+
+.cat-2 {
+    width: 220px !important;
+    height: 105px !important;
+
+    right: 7% !important;
+    top: 18% !important;
+
+    transform: rotate(5deg);
+}
+
+
+/* =================================
+   CAT 3 — BOTTOM LEFT
+================================= */
+
+.cat-3 {
+    width: 160px !important;
+    height: 175px !important;
+
+    left: 10% !important;
+    bottom: 10% !important;
+
+    transform: rotate(5deg);
+}
+
+
+/* =================================
+   CAT 4 — BOTTOM RIGHT
+================================= */
+
+.cat-4 {
+    width: 160px !important;
+    height: 175px !important;
+
+    right: 10% !important;
+    bottom: 10% !important;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 800px) {
+
+    .birthday-title h1 {
+        font-size: 38px;
+    }
+
+    .balloon-emoji {
+        font-size: 38px;
+    }
+
+    .cat-1 {
+        width: 120px !important;
+        height: 155px !important;
+
+        left: 2% !important;
+        top: 10% !important;
+    }
+
+    .cat-2 {
+        width: 140px !important;
+        height: 70px !important;
+
+        right: 2% !important;
+        top: 12% !important;
+    }
+
+    .cat-3 {
+        width: 110px !important;
+        height: 120px !important;
+
+        left: 3% !important;
+        bottom: 7% !important;
+    }
+
+    .cat-4 {
+        width: 110px !important;
+        height: 120px !important;
+
+        right: 3% !important;
+        bottom: 7% !important;
+    }
+
+}
+.heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.balloon-emoji {
+    display: inline-block;
+
+    font-size: 70px;
+
+    margin-left: 10px;
+
+    line-height: 1;
+
+    vertical-align: middle;
+
+    transform: rotate(8deg);
+}
+/* =================================
+   BIRTHDAY ENTRANCE ANIMATION
+================================= */
+
+/* Main birthday content */
+
+#birthday-page:not(.hidden) .birthday-content {
+    animation: birthdayAppear 1s ease-out forwards;
+}
+
+@keyframes birthdayAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =================================
+   CAT ENTRANCE ANIMATIONS
+================================= */
+
+#birthday-page:not(.hidden) .cat-1 {
+    animation: cat1Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-2 {
+    animation: cat2Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-3 {
+    animation: cat3Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-4 {
+    animation: cat4Appear 0.8s ease-out forwards;
+}
+
+
+/* CAT 1 */
+
+@keyframes cat1Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(-6deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(-6deg) scale(1);
+    }
+
+}
+
+
+/* CAT 2 */
+
+@keyframes cat2Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1);
+    }
+
+}
+
+
+/* CAT 3 */
+
+@keyframes cat3Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1);
+    }
+
+}
+
+
+/* CAT 4 */
+
+@keyframes cat4Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(-5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(-5deg) scale(1);
+    }
+
+}
+/* =================================
+   BIRTHDAY ENTRANCE + POLAROID CATS
+================================= */
+
+
+/* =================================
+   MAIN BIRTHDAY ENTRANCE
+================================= */
+
+#birthday-page:not(.hidden) .birthday-content {
+    animation: birthdayAppear 1s ease-out forwards;
+}
+
+@keyframes birthdayAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =================================
+   POLAROID CAT PHOTOS
+================================= */
+
+.cat-photo {
+    position: absolute !important;
+
+    z-index: 10;
+
+    object-fit: cover;
+
+    background: #fffdf8;
+
+    padding: 8px;
+    padding-bottom: 28px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 10px 25px rgba(80, 50, 30, 0.18);
+}
+
+
+/* =================================
+   CAT 1
+================================= */
+
+.cat-1 {
+    width: 180px !important;
+    height: 230px !important;
+
+    left: 7% !important;
+    top: 15% !important;
+
+    transform: rotate(-6deg);
+}
+
+
+/* =================================
+   CAT 2
+================================= */
+
+.cat-2 {
+    width: 220px !important;
+    height: 105px !important;
+
+    right: 7% !important;
+    top: 18% !important;
+
+    transform: rotate(5deg);
+}
+
+
+/* =================================
+   CAT 3
+================================= */
+
+.cat-3 {
+    width: 160px !important;
+    height: 175px !important;
+
+    left: 10% !important;
+    bottom: 10% !important;
+
+    transform: rotate(5deg);
+}
+
+
+/* =================================
+   CAT 4
+================================= */
+
+.cat-4 {
+    width: 160px !important;
+    height: 175px !important;
+
+    right: 10% !important;
+    bottom: 10% !important;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =================================
+   CAT ENTRANCE ANIMATIONS
+================================= */
+
+#birthday-page:not(.hidden) .cat-1 {
+    animation: cat1Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-2 {
+    animation: cat2Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-3 {
+    animation: cat3Appear 0.8s ease-out forwards;
+}
+
+#birthday-page:not(.hidden) .cat-4 {
+    animation: cat4Appear 0.8s ease-out forwards;
+}
+
+
+/* =================================
+   CAT 1 ANIMATION
+================================= */
+
+@keyframes cat1Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(-6deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(-6deg) scale(1);
+    }
+
+}
+
+
+/* =================================
+   CAT 2 ANIMATION
+================================= */
+
+@keyframes cat2Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1);
+    }
+
+}
+
+
+/* =================================
+   CAT 3 ANIMATION
+================================= */
+
+@keyframes cat3Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(5deg) scale(1);
+    }
+
+}
+
+
+/* =================================
+   CAT 4 ANIMATION
+================================= */
+
+@keyframes cat4Appear {
+
+    from {
+        opacity: 0;
+        transform: rotate(-5deg) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(-5deg) scale(1);
+    }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 800px) {
+
+    .cat-1 {
+        width: 120px !important;
+        height: 155px !important;
+
+        left: 2% !important;
+        top: 10% !important;
+    }
+
+    .cat-2 {
+        width: 140px !important;
+        height: 70px !important;
+
+        right: 2% !important;
+        top: 12% !important;
+    }
+
+    .cat-3 {
+        width: 110px !important;
+        height: 120px !important;
+
+        left: 3% !important;
+        bottom: 7% !important;
+    }
+
+    .cat-4 {
+        width: 110px !important;
+        height: 120px !important;
+
+        right: 3% !important;
+        bottom: 7% !important;
+    }
+
+}
+/* */
+
+.balloon-emoji {
+    display: inline-block;
+
+    font-size: 70px;
+
+    margin-left: 10px;
+
+    line-height: 1;
+
+    vertical-align: middle;
+
+    animation: balloonFloat 3s ease-in-out infinite;
+}
+
+@keyframes balloonFloat {
+
+    0% {
+        transform: translateY(0) rotate(8deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(8deg);
+    }
+
+}
+/* =================================
+   CONTINUE BUTTON
+================================= */
+
+.continue-button {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 4px;
+
+    color: #9a6d52;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    animation: continueFloat 2s ease-in-out infinite;
+}
+
+.continue-button .arrow {
+    font-size: 20px;
+}
+
+@keyframes continueFloat {
+
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(5px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+}
+/* =================================
+   CONTINUE BUTTON
+================================= */
+
+.continue-button {
+    position: absolute;
+
+    left: 50%;
+    bottom: 28px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3px;
+
+    color: #9a6d52;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    z-index: 50;
+
+    cursor: pointer;
+
+    animation: continueFloat 2s ease-in-out infinite;
+}
+
+.continue-button .arrow {
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+
+@keyframes continueFloat {
+
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(5px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+}
+/* =================================
+   CONFETTI SYSTEM
+================================= */
+
+#confetti-container {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    pointer-events: none;
+
+    z-index: 15;
+}
+
+
+/*  */
+
+.confetti {
+    position: absolute;
+
+    width: 8px;
+    height: 13px;
+
+    border-radius: 2px;
+
+    opacity: 0;
+
+    animation: confettiMove var(--fall-time) linear forwards;
+
+    animation-delay: var(--delay);
+}
+
+
+/* =================================
+*/
+
+@keyframes confettiMove {
+
+    /* Starting point */
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translate(0, 0)
+            rotate(0deg);
+    }
+
+
+    /* Launch / appear */
+
+    8% {
+        opacity: 1;
+    }
+
+
+    /* Move toward the center */
+
+    35% {
+        opacity: 1;
+
+        transform:
+            translate(
+                var(--target-x),
+                var(--target-y)
+            )
+            rotate(180deg);
+    }
+
+
+    /* Start falling */
+
+    55% {
+        opacity: 1;
+
+        transform:
+            translate(
+                calc(var(--target-x) * 0.8),
+                calc(var(--target-y) + 80px)
+            )
+            rotate(300deg);
+    }
+
+
+    /* Fall down */
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translate(
+                calc(var(--target-x) * 0.6),
+                110vh
+            )
+            rotate(600deg);
+    }
+
+}
+.birthday-small {
+    font-family: "Lora", serif;
+
+    font-size: 16px;
+
+    color: #9a6d52;
+
+    margin-bottom: 14px;
+}
+
+
+.birthday-title h1 {
+    font-family: "Quicksand", sans-serif;
+
+    font-weight: 700;
+}
+
+
+.birthday-content h2 {
+    font-family: "Quicksand", sans-serif;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+}
+/* =================================
+   LETTER PAGE
+================================= */
+
+#letter-page {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: #f6dcc2;
+
+    z-index: 200;
+
+    overflow-y: auto;
+}
+
+
+/* LETTER CARD */
+
+.letter-card {
+    width: min(700px, 90vw);
+
+    min-height: 500px;
+
+    padding: 60px 70px;
+
+    background: #fff8f0;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 30, 0.15);
+
+    color: #51372b;
+}
+
+
+/* SMALL LABEL */
+
+.letter-label {
+    margin-bottom: 35px;
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 15px;
+
+    color: #9a6d52;
+
+    letter-spacing: 1px;
+}
+
+
+/* LETTER HEADING */
+
+.letter-card h1 {
+    margin-bottom: 30px;
+
+    font-family: "Lora", serif;
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+    color: #51372b;
+}
+
+
+/* LETTER TEXT */
+
+.letter-content {
+    font-family: "Lora", serif;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #674b3c;
+}
+
+
+/* SIGNATURE */
+
+.letter-sign {
+    margin-top: 40px;
+
+    font-family: "Lora", serif;
+
+    font-size: 16px;
+
+    color: #79543f;
+}
+
+
+/* CONTINUE BUTTON */
+.continue-button {
+    position: absolute;
+    left: 50%;
+    bottom: 28px;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: #9a6d52;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 50;
+    animation: continueFloat 2s ease-in-out infinite;
+}
+.continue-button .arrow {
+    font-size: 21px;
+
+    line-height: 1;
+}
+@keyframes continueFloat {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(5px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+/* =================================
+   LETTER DESIGN
+================================= */
+
+#letter-page {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    background: #f6dcc2;
+
+    overflow-y: auto;
+
+    z-index: 200;
+}
+
+
+/* PAPER */
+
+.letter-card {
+    width: min(720px, 90vw);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 55px 65px;
+
+    background: #fffaf2;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 15px 40px rgba(80, 50, 30, 0.16);
+
+    color: #51372b;
+}
+
+
+/* SMALL HEADING */
+
+.letter-label {
+    margin-bottom: 30px;
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+
+    color: #9a6d52;
+}
+
+
+/* DEAR */
+
+.letter-card h1 {
+    margin-bottom: 28px;
+
+    font-family: "Lora", serif;
+
+    font-size: 32px;
+
+    font-weight: 400;
+
+    color: #51372b;
+}
+
+
+/* CONTENT */
+
+.letter-content {
+    font-family: "Lora", serif;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+    color: #674b3c;
+}
+
+
+/* FINAL SIGN */
+
+.letter-sign {
+    margin-top: 35px;
+
+    font-family: "Lora", serif;
+
+    font-size: 16px;
+
+    color: #79543f;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .letter-card {
+        padding: 35px 25px;
+
+        width: 94vw;
+
+        max-height: 88vh;
+    }
+
+    .letter-card h1 {
+        font-size: 27px;
+    }
+
+    .letter-content {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+}
+/* =================================
+   MEMORY POPUP
+================================= */
+
+#memory-page {
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+
+    background: rgba(74, 52, 40, 0.25);
+
+    backdrop-filter: blur(5px);
+
+    z-index: 300;
+}
+
+
+/* CARD */
+
+.memory-card {
+    position: relative;
+
+    width: min(430px, 90vw);
+
+    padding: 25px;
+
+    background: #fffaf2;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(80, 50, 30, 0.25);
+
+    animation: memoryAppear 0.5s ease-out;
+}
+
+
+/* PHOTO */
+
+.memory-photo {
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background: #f1dfcf;
+}
+
+
+.memory-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* QUESTION */
+
+.memory-question {
+    margin-top: 22px;
+
+    font-family: "Lora", serif;
+
+    font-size: 24px;
+
+    color: #51372b;
+}
+
+
+/* DESCRIPTION */
+
+.memory-text {
+    margin-top: 10px;
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #806657;
+}
+
+
+/* NEXT */
+
+.memory-next {
+    margin-top: 20px;
+
+    padding: 10px 22px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #95664e;
+
+    color: white;
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.memory-next:hover {
+    background: #79503d;
+}
+
+
+/* CLOSE */
+
+.memory-close {
+    position: absolute;
+
+    top: 10px;
+    right: 12px;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #806657;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+}
+
+
+/* ANIMATION */
+
+@keyframes memoryAppear {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+
+}

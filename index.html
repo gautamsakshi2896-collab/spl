@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise</title>
+
+    <link rel="stylesheet" href="./style.css">
+      <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <link rel="stylesheet"
+          href="./style.css">
+
+</head>
+
+<body>
+        <main id="login-page">
+
+        <div class="login-card">
+
+            <div class="login-cat">
+                🐱
+            </div>
+
+            <p class="small-text">
+                Before we begin...
+            </p>
+
+            <h1>
+                One little question
+            </h1>
+
+            <p class="description">
+                When were you born?
+            </p>
+
+
+            <form id="birthday-form">
+
+                <label for="dob">
+                    Date of Birth
+                </label>
+
+                <div class="date-box">
+
+                    <input
+                        type="text"
+                        id="dob"
+                        placeholder="DD / MM / YYYY"
+                        maxlength="10"
+                        inputmode="numeric"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="calendar-button"
+                        aria-label="Open calendar"
+                    >
+                        📅
+                    </button>
+
+                    <input
+                        type="date"
+                        id="dob-picker"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Submit
+                </button>
+
+                <p id="error-message"></p>
+
+            </form>
+
+        </div>
+
+    </main>  
+<main id="birthday-page" class="hidden">
+    <div id="confetti-container"></div>
+
+    <img src="./cats/cat1.png" class="cat-photo cat-1" alt="Cat">
+    <img src="./cats/cat2.png" class="cat-photo cat-2" alt="Cat">
+    <img src="./cats/cat3.png" class="cat-photo cat-3" alt="Cat">
+    <img src="./cats/cat4.png" class="cat-photo cat-4" alt="Cat">
+
+    <div class="birthday-content">
+        
+    </div>
+<div class="birthday-content">
+
+        <p class="birthday-small">
+            
+        </p>
+        <div class="birthday-title">
+
+            <h2>
+                A little celebration for you
+            </h2>
+
+            <span class="balloon-emoji">
+                🎈
+            </span>
+
+        </div>
+        <h2>
+            
+        </h2>
+
+    </div>
+
+<button
+    type="button"
+    class="continue-button"
+    id="continue-button"
+>
+
+    <span>Continue</span>
+
+    <span class="arrow">↓</span>
+
+</button>
+</div>
+
+</main>
+
+<section id="letter-page" class="hidden">
+
+    <div class="letter-card">
+
+        <p class="letter-label">
+            A little something for you
+        </p>
+
+        <h1>
+            Dear Ankita,
+        </h1>
+
+        <div class="letter-content">
+            <p>
+                Happy birthday to you.
+
+   I won't say, “Forget everything and just live today.” How about replaying all those memories instead? Even the sad ones, even the happy ones. Just replaying them and watching yourself grow through all of them. I don't know everything about you, and I'll never force you to tell me anything. I won't say that “I don't want to know anything about you.” Because I do. I want to know.
+And more than anything, I want to see you genuinely happy.You don't need to pretend to be someone you're not, or hide what you actually feel. And you can't change your past, so why make your present worse by constantly thinking about it?
+Maybe it's better to accept whatever happened in the earlier chapters of your life and keep moving forward.You probably don't realise how good you are.You are someone a person could always hope to have in their life.When I first met you, four years ago, in February 2022, I had actually come to meet your sister. Instead, I met you.
+   I still remember that day.You were wearing navy blue shorts and a white half-sleeved T-shirt with New York printed on it. You had your hair in a ponytail, with some strands falling across the left side of your face. There was a white earphone in your left ear, your phone in your left hand...
+And your eyes were on me.I can't really explain what happened at that moment. It was the first time I had ever noticed someone like that.
+I'm not exaggerating.And as time passed, I started noticing more and more things about you. At some point, I even wished I could keep that version of you just to myself.
+But I never wanted anything from you.Never.I never expected anything either.
+   I just hope you always remain you.You don't have to smile when you don't want to. You don't have to do things you don't want to do. How about simply being yourself?
+And if sometimes you can't, then how about just trying?Just like that K-drama.."we're all trying here".You can always vent your anger on me. And your happiness too. 😉
+I'll listen... I'll always do. I don't have any right to say that I'll always be there, especially when I can't physically be in front of you.
+But if someday you text me just...“Aa jao.” I'll come to you.Even if it takes me 60 hours to get there.
+
+Once again,
+
+HAPPY BIRTHDAY, MISS. SAIKIA. 🎈
+            </p>
+        </div>
+
+        <p class="letter-sign">
+            
+From my sincere heart,
+which you somehow made warm.
+        </p>
+        <button
+    type="button"
+    class="memory-open-button"
+    id="memory-open-button"
+>
+    Remember this? →
+</button>
+
+    </div>
+
+</section>
+<!-- =================================
+     MEMORY PAGE
+================================= -->
+
+<section id="memory-page" class="hidden">
+
+    <div class="memory-card">
+
+        <button
+            type="button"
+            class="memory-close"
+            id="memory-close"
+        >
+            ×
+        </button>
+
+        <div class="memory-photo">
+
+            <img
+                id="memory-image"
+                src="./cats/me.jpg"
+                alt="Memory"
+            >
+
+        </div>
+
+        <p class="memory-question">
+            Remember this?
+        </p>
+
+        <p
+            class="memory-text"
+            id="memory-text"
+        >
+    
+        </p>
+
+        <button
+            type="button"
+            class="memory-next"
+            id="memory-next"
+        >
+            Next → talaaq ho to batana.......
+        </button>
+
+    </div>
+
+</section>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
